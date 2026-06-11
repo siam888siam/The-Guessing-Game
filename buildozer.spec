@@ -1,25 +1,20 @@
 [app]
 title = The Guessing Game
-package.name = theguessinggame
+package.name = guessinggame
 package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 
-# গিটহাব এনভায়রনমেন্টের জন্য রিকোয়ারমেন্টস একদম ক্লিন রাখা হলো
-requirements = python3,kivy==2.3.0,kivymd
+requirements = python3,kivy==2.2.1
 
 orientation = portrait
 fullscreen = 0
 
-# Target Android API
-android.api = 33
-android.minapi = 24
-android.ndk_api = 24
-
-# গিটহাব বিল্ডের জন্য NDK সংস্করণ ফাঁকা রাখা ভালো, সে নিজে বেস্ট ও স্ট্যাবলটা টেনে নেবে
-# android.ndk = 26b (এটি কমেন্ট আউট করে দেওয়া হলো)
-
+android.api = 31
+android.minapi = 21
+android.ndk_api = 21
+android.ndk = 25b
 android.accept_sdk_license = True
 android.archs = arm64-v8a
 android.allow_backup = True
