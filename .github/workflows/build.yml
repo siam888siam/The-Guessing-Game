@@ -1,5 +1,8 @@
-name: guess APK
+
 on: [push, workflow_dispatch]
+- name: Build APK with Buildozer
+  run: |
+    buildozer -v android debug 2>&1 | tail -100
 
 jobs:
   build:
@@ -33,3 +36,5 @@ jobs:
         with:
           name: GuessingGame-APK
           path: bin/*.apk
+
+          
