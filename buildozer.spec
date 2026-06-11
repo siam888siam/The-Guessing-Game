@@ -1,13 +1,13 @@
 [app]
-title =The Guessing Game
-package.name = guessinggame
+title = The Guessing Game
+package.name = theguessinggame
 package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 
 # গিটহাব এনভায়রনমেন্টের জন্য রিকোয়ারমেন্টস একদম ক্লিন রাখা হলো
-requirements = python3,kivy==master
+requirements = python3,kivy==2.3.0,kivymd
 
 orientation = portrait
 fullscreen = 0
